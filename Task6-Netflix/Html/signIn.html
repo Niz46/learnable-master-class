@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn | NetFlix</title>
+    <link rel="stylesheet" href="../Css/signIn.css" />
+    <link
+      rel="shortcut icon"
+      href="../Image/header-logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#"><img src="../Image/Netflix-logo.png" alt="logo" /></a>
+    </nav>
+    <div class="form-wrapper">
+      <h2>Sign In</h2>
+      <form action="#">
+        <div class="form-control">
+          <input type="text" id="email" required />
+          <label>Email or phone number</label>
+        </div>
+        <div class="form-control">
+          <input type="password" id="password" required />
+          <label>Password</label>
+        </div>
+        <button type="submit" onclick="auth()">Sign In</button>
+        <div class="form-help">
+          <div class="remember-me">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+          <a href="#">Need help?</a>
+        </div>
+      </form>
+      <div class="facebook flex">
+        <img src="../Image/fa.png" alt="" />
+        <span class="text">Login with Facebook</span>
+      </div>
+      <p>New to Netflix? <a href="../index.html">Sign up now</a></p>
+      <small>
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+        <a href="#">Learn more.</a>
+      </small>
+    </div>
+
+    <footer class="footer">
+      <h1>Questions? Call 1-844-505-2993</h1>
+
+      <div class="row">
+        <div class="col">
+          <a href="#">FAQ</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Help Center</a>
+          <a href="#">Corporate Information</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Terms of Use</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+
+      <button class="language-btn">
+        <img src="../Image/globe-solid.svg" alt="" />
+        English
+        <img src="../Image/down-icon.png" alt="" />
+      </button>
+
+      <p class="copyright-text">
+        © 1997-2021 Netflix, Inc. {i-062d573a0ee099242}
+      </p>
+    </footer>
+
+    <script>
+      function auth() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if(email !== "" && password !== "" ){
+          window.location.href = "./landPage.html";
+          alert("Login Successfully");
+        }
+        else{
+          alert("Enter Any Email Address and Password");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

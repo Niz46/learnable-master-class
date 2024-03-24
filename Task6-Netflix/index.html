@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="1D0sYuQU8Fk6LTnEbay3i4uJb7V-LxnzSSXCCP64gS0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./Image/header-logo.png"
+      type="image/x-icon"
+    />
+    <title>NetFlix</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Navbar -->
+      <nav class="nav">
+        <a href="#">
+          <img src="./Image/logo.png" alt="" class="logo" />
+        </a>
+        <div class="button_container">
+          <button class="language-btn">
+            <img src="./Image/globe-solid.svg" alt="" class="map" /> English
+            <img src="./Image/down-icon.png" alt="" />
+          </button>
+          <a href="./Html/signIn.html">
+            <button type="button">Sign In</button>
+          </a>
+        </div>
+      </nav>
+      <div class="header_content">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <form class="email-signup">
+          <input type="email" placeholder="Email Address" id="email" required />
+          <button type="submit" onclick="auth()">Get Started</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <article class="features">
+        <div class="row">
+          <div class="text-col">
+            <h2>Enjoy on your TV.</h2>
+            <p>
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </p>
+          </div>
+          <div class="img-col">
+            <img src="./Image/tv.png" alt="" />
+            <video
+              data-uia="nmhp-card-animation-asset-video"
+              autoplay
+              playsinline
+              muted
+              loop
+            >
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="img-col">
+            <img src="./Image/feature-2.png" alt="" />
+          </div>
+          <div class="text-col">
+            <h2>Download your shows to watch offline.</h2>
+            <p>
+              Save your favorites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-col">
+            <h2>Watch everywhere.</h2>
+            <p>
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV without paying more.
+            </p>
+          </div>
+          <div class="img-col">
+            <img src="./Image/tv2.png" alt="" />
+            <img src="./Image/man.png" alt="" class="man" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="img-col">
+            <img src="./Image/boy.png" alt="" />
+          </div>
+          <div class="text-col">
+            <h2>Create profiles for kids.</h2>
+            <p>
+              Send kids on adventures with their favorite characters in a space
+              made just for them—free with your membership.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <section class="FAQ">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="accordion">
+          <li>
+            <input type="radio" name="accordion" id="first" />
+            <label for="first">What is Netflix?</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates repellendus eius reiciendis? Sapiente deleniti sint
+                itaque ipsam reiciendis libero et earum aliquid fugit saepe,
+                ullam, neque tenetur dicta a voluptatem.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="second" />
+            <label for="second">What is Netflix?</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates repellendus eius reiciendis? Sapiente deleniti sint
+                itaque ipsam reiciendis libero et earum aliquid fugit saepe,
+                ullam, neque tenetur dicta a voluptatem.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="third" />
+            <label for="third">How much does Netflix cost?</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates repellendus eius reiciendis? Sapiente deleniti sint
+                itaque ipsam reiciendis libero et earum aliquid fugit saepe,
+                ullam, neque tenetur dicta a voluptatem.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="forth" />
+            <label for="forth">What can I watch on Netflix?</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates repellendus eius reiciendis? Sapiente deleniti sint
+                itaque ipsam reiciendis libero et earum aliquid fugit saepe,
+                ullam, neque tenetur dicta a voluptatem.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="fifth" />
+            <label for="fifth">Is Netflix good for Kids</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates repellendus eius reiciendis? Sapiente deleniti sint
+                itaque ipsam reiciendis libero et earum aliquid fugit saepe,
+                ullam, neque tenetur dicta a voluptatem.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <small
+          >Ready to watch? Enter your email to create or restart your
+          membership.</small
+        >
+        <form class="email-signup">
+          <input type="email" placeholder="Email Address" id="email" required />
+          <button type="submit" onclick="auth()">Get Started</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h2>Questions? call +234-704-787-2574</h2>
+
+      <div class="row">
+        <div class="col">
+          <a href="#">FAQ</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Ways to watch</a>
+          <a href="#">Corporate information</a>
+          <a href="#">Only on Netflix</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Help Center</a>
+          <a href="#">Jobs</a>
+          <a href="#">Terms Of Use</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Account</a>
+          <a href="#">Redeem Gift Cards</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Media Center</a>
+          <a href="#">Buy Gift Cards</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+      </div>
+
+      <button class="language-btn">
+        <img src="./Image/globe-solid.svg" alt="" class="map" /> English
+        <img src="./Image/down-icon.png" alt="" />
+      </button>
+
+      <p class="copyright-text">Netflix India</p>
+    </footer>
+
+    <script>
+      function auth() {
+        var email = document.getElementById("email").value;
+
+        if (email !== "") {
+          window.location.href = "./Html/landPage.html";
+          alert("Welcome To Nzeh Favour's NetFlix Page");
+        } else {
+          alert("Enter Any Email Address");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

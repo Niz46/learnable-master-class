@@ -1,0 +1,7 @@
+{
+  "short_name": "React App",
+  "name": "TodoList",
+  "icons": [
+  ],
+  "start_url": "."
+}

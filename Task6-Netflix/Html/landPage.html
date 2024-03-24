@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Netflix</title>
+    <link rel="stylesheet" href="../Css/landPage.css" />
+    <link
+      rel="shortcut icon"
+      href="../Image/header-logo.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="nav flex" id="nav">
+      <div class="img-logo">
+        <a href="#">
+          <img
+            src="../Image/Netflix-logo.png"
+            alt=""
+            class="logo"
+          />
+        </a>
+      </div>
+
+      <div class="navbar flex">
+        <div class="nav_left flex">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tv Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+          </ul>
+        </div>
+
+        <div class="nav_right flex">
+          <div class="text-icon">
+            <img
+              src="../Image/magnifying-glass-solid.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <p>ÇOCUK</p>
+            <img
+              src="../Image/gift-solid.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              src="../Image/bell-solid.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <a href="./profilePage.html">
+            <img
+              src="../Image/avatar-4.png"
+              alt=""
+              class="nav_avatar"
+            />
+          </a>
+          <div class="icon">
+            <img
+              src="../Image/down-icon.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </div>
+
+      <span class="toggle-btn" aria-controls="primary" aria-expanded="false">
+        <img
+          src="../Image/bars-solid.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </span>
+
+      <div class="navbar-mobie flex" id="primary" data-visible="false">
+        <div class="nav_lef">
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tv Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+            <a href="./profilePage.html">
+              <img
+                src="../Image/avatar-4.png"
+                alt=""
+                class="nav_avatar"
+              />
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <!-- Banner -->
+      <section id="banner">
+        <div id="banner_contents">
+          <h1 id="banner_title"></h1>
+          <p id="banner_description"></p>
+          <div id="banner_buttons">
+            <button id="banner_button">
+              <img src="../Image/play-solid.svg" alt="" />
+              Play
+            </button>
+            <button id="banner_button">
+              <img src="../Image/circle-info-solid.svg" alt="" />
+              My List
+            </button>
+          </div>
+        </div>
+        <div id="banner_fadeButtom"></div>
+      </section>
+    </header>
+
+    <!-- Row -->
+    <section id="headRow">
+      <div class="row">
+        <h2 class="row_title"></h2>
+        <div class="row_posters">
+          <div class="movie-ranking"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="icons">
+        <img src="../Image/square-facebook.svg" alt="" />
+        <img src="../Image/twitter.svg" alt="" />
+        <img src="../Image/square-instagram.svg" alt="" />
+        <img src="../Image/youtube.svg" alt="" />
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <a href="#">Audio and Subtitle</a>
+          <a href="#">Media Cente</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Audio description</a>
+          <a href="#">Investor Relation</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Legal Notices</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Help Center</a>
+          <a href="#">Jobs</a>
+        </div>
+
+        <div class="col">
+          <a href="#">Gift card</a>
+          <a href="#">Subscription</a>
+        </div>
+      </div>
+
+      <button class="language-btn">English</button>
+
+      <p class="copyright-text">
+        © 1997-2021 Netflix, Inc. {i-062d573a0ee099242}
+      </p>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let nav = document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY > 0);
+      });
+    </script>
+    <script src="../main.js"></script>
+  </body>
+</html>
